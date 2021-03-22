@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Winter Break at Hogwarts Maps</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="author" content="Brian Davies"/>
+<meta name="description" content="Maps for Winter Break at Hogwarts by Brian Davies"/>
+
+<style>
+
+html, body { width: 100%; height: 100%; margin: 0px; }
+
+body { font-family: Ariel, sans-serif; background-color: #43382d; }
+
+div.info     { position: fixed; top: 14px; left:  10px; }
+div.credits  { position: fixed; top: 10px; left:  10px; }
+div.controls { position: fixed; top: 10px; right: 30px; }
+
+div.controls a { font-size: 2em; font-weight: 900; color: #eeeeee; text-decoration: none; text-shadow: 1px 1px 1px black; }
+div.controls a:visited { color: #eeeeee; }
+div.controls a:hover { color: #ffffff; }
+
+div.controls a.disabled { color: #7e5d3a; text-shadow: none; }
+
+div.info a { color: #7e5d3a; text-decoration: none; border: 1px solid; border-radius: 50%; padding: 2px 6px 0px 5px; }
+
+div.credits { display: none; font-size: .8em; background-color: #4c3823; color: #eeeeee;  width: 300px; padding: 12px 24px; z-index: 2; border-radius: 12px; }
+
+div.credits a { color: white; }
+
+</style>
+
+<script>
+
+var currentindex = 1;
+
+function shiftimage (relative)
+{
+	var newindex = currentindex + relative;
+	
+	if (newindex >= 0 && newindex <= 4)
+		setimage (currentindex + relative);
+	
+	document.getElementById("upbutton").className = "";
+	document.getElementById("downbutton").className = "";
+		
+	if (currentindex == 0)
+		document.getElementById("downbutton").className = "disabled";
+	else if (currentindex == 4)
+		document.getElementById("upbutton").className = "disabled";
+	
+}
+
+function setimage (index)
+{
+	document.getElementById ("map" + currentindex).style.display = "none";
+	document.getElementById ("map" + index).style.display = "block";
+	
+	currentindex = index;
+}
+
+function showcredits ()
+{
+	document.getElementById ("credits").style.display = "block";
+}
+
+function hidecredits ()
+{
+	document.getElementById ("credits").style.display = "none";
+}
+
+</script>
+
+ </head>
+
+<body class="maps">
+
+<div style="position: absolute; left: 50%; margin-left: -662px; width: 1324px; ">
+<div style="background-image: url('terrain.jpg');">
+<img id="map0" src="map0.png" style="display: none;"/>
+<img id="map1" src="map1.png" style="display: block;"/>
+<img id="map2" src="map2.png" style="display: none;"/>
+<img id="map3" src="map3.png" style="display: none;"/>
+<img id="map4" src="map4.png" style="display: none;"/>
+</div>
+</div>
+
+<div class="controls">
+<a id="upbutton" href="javascript:shiftimage (1);">&#9650;</a>
+<br/>
+<a id="downbutton" href="javascript:shiftimage (-1);">&#9660;</a>
+</div>
+
+
+<div class="info">
+<a href="javascript:showcredits ();">?</a>
+</div>
+
+
+<div class="credits" id="credits">
+
+<p><a href="javascript:hidecredits ()">&laquo; close</a></p>
+
+<p>These maps were drawn by Brian Davies.</p>
+
+<p>The background is a free clipart <a href="http://clipartix.com/scroll-clip-art-image-1464/" target="_blank">scroll</a>, modified with a lovely tea stain texture created by the talented and generous <a href="https://merkatch.deviantart.com/gallery/45811718/Textures" target="_blank">MerKatch</a> on DeviantArt.</p>
+
+<p>The <a href="https://www.flaticon.com/free-icon/tree-silhouette_46564" target="_blank">tree icon</a> was offered for free use by <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a> on FlatIcon.</p>
+
+<p>The <a href="https://pixabay.com/en/abstract-aqua-aquatic-backdrop-70995/" target="_blank">water</a> used as a texture was kindly made freely available by <a href="https://pixabay.com/en/users/PublicDomainPictures-14/" target="_blank">PublicDomainPictures</a> on Pixabay.</p>
+
+<!--
+http://clipartix.com/scroll-clip-art-image-1464/
+-->
+
+</div>
+
+
+</body>
+</html>

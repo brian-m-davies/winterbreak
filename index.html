@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Winter Break at Hogwarts</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="author" content="Brian Davies"/>
+<meta name="description" content="Winter Break at Hogwarts by Brian Davies"/>
+
+<link rel="stylesheet" href="style.css" type="text/css" media="all"/>
+
+<script>
+	
+function showcredits ()
+{
+	document.getElementById ("introduction").style.display = "none";
+	document.getElementById ("credits").style.display = "block";
+}
+
+function showdownload ()
+{
+	document.getElementById ("introduction").style.display = "none";
+	document.getElementById ("download").style.display = "block";
+}
+
+function showintro ()
+{
+	document.getElementById ("credits").style.display = "none";
+	document.getElementById ("download").style.display = "none";
+	document.getElementById ("introduction").style.display = "block";
+}
+
+</script>
+
+  </head>
+
+<body class="splash">
+
+
+<!-- Introduction -->
+
+<div class="about" id="introduction">
+<h1>Winter Break at Hogwarts</h1>
+<h2>Brian Davies</h2>
+<p><p>Spend a Christmas holiday alone in the world's most famous wizarding school...</p></p>
+
+<p><a href="javascript:showcredits ();">credits</a> | <a href="javascript:showdownload ();">downloads</a></p>
+</div>
+
+
+<!-- Credits -->
+
+<div class="about" id="credits" style="display: none;">
+
+<h1>Credits</h1>
+
+<p>Primary credit goes to J.K. Rowling for creating a world that many would like to call home, and for being relaxed enough about copyright to allow fan fiction like this to flourish.</p>
+
+<p>The game was written by Brian Davies, as a gift for his then 9-year-old daughter.</p>
+
+<p>Thanks to Brian Robinson, Alex Pegg, and Karen Johnson, all former professional editors, current Harry Potter fans, and good friends, for extensive testing and corrections both grammatical and logical.  Additional thanks to Greg Frost, who reviewed the game in competition, and took the time afterwards to provide a whole host of deeply thoughtful feedback.</p>
+
+<p>The <a href="https://pixabay.com/en/usj-hogwarts-harry-potter-1925191/" target="_blank">photo</a> of Hogwarts Castle was kindly made freely available on Pixabay by <a href="https://pixabay.com/en/users/Jungyeon-1055977/" target="_blank">Jungyeon</a>.
+
+<p>The game was written in <a href="http://inform7.com" target="_blank">Inform 7</a>, a fantastic tool by Graham &amp; Toby Nelson.  The web interpreter is <a href="http://eblong.com/zarf/glulx/quixe/" target="_blank">Quixe</a>.</p>
+
+<p><a href="javascript:showintro ();">&laquo; back</a></p>
+
+</div>
+
+
+<!-- Download -->
+
+<div class="about" id="download" style="display: none;">
+
+<h1>Downloads</h1>
+
+<p>If you have a <a href="http://inform7.com/if/interpreters/" target="_blank">Z Machine</a>, you can download the game file and the map package.  If you don't know what a Z Machine is, back away and click the large play button to the right.</p>
+
+<ul>
+<li><a href="Winter Break at Hogwarts.gblorb">Blorb File</a></li>
+<li><a href="wbh-map-package.zip">Map Package</a></li>
+</ul>
+
+<p><a href="javascript:showintro ();">&laquo; back</a></p>
+
+</div>
+
+
+<div class="start">
+<a class="playbutton" href="play.html">&#9658;</a>
+</div>
+
+</body>
+</html>
+

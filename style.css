@@ -1,0 +1,68 @@
+/* Global */
+
+html, body { width: 100%; height: 100%; margin: 0px; font-family: Arial, sans-serif; }
+
+
+/* Index */
+
+body.splash { background-image: url('banner.jpg'); background-position: center; background-size: cover; }
+
+div.about   { position: absolute; left: 0px;  bottom: 0px; padding: 36px 48px; max-width: 500px; }
+div.start   { position: absolute; right: 0px; bottom: 0px; padding: 50px 64px; max-width: 120px; }
+
+div.about { color: white; text-shadow: 1px 1px 2px black; }
+
+div.about h1 { font-size: 2.0em; margin: 0px; }
+div.about h2 { font-size: 1.2em; margin: 0px; margin-left: 24px; margin-bottom: 24px; }
+div.about p  { font-size: 1.0em; }
+div.about a  { color: white; }
+
+div.start a { font-size: 4em; text-decoration: none; color: #eeeeee; text-shadow: 1px 1px 2px black; }
+div.start a:visited { color: #eeeeee; }
+div.start a:hover { color: #ffffff; }
+
+
+/* Left Menu */
+
+div.menu { position: fixed; top: 0px; left: 0px; height: 100%; width: 200px; }
+div.menu { background-image: url('banner.jpg'); background-position: 24%; background-size: cover; }
+
+div.menu ul { margin: 0px; padding: 18px; }
+
+div.menu div.links { font-family: Arial, sans-serif; font-weight: 700; text-shadow: 1px 1px 1px #c5d1e8; }
+div.menu div.links li { list-style-type: none; margin: 4px; }
+
+div.menu a { text-decoration: none; color: #345083; }
+div.menu a:visited { color: #345083; }
+div.menu a:hover   { color: #233558; }
+
+
+/* Right Content */
+
+div#gameport { position: absolute; top: 0px; left: 200px; bottom: 0px; right: 0px; }
+
+div.content { position: absolute; top: 0px; left: 200px; bottom: 0px; max-width: 880px; }
+
+div.content { padding: 0px 30px; font-family: Georgia, "Times New Roman", Times, serif; font-size: 1em; }
+
+div content h2 { font-size: 1.2em; }
+
+
+/* Duck Punch */
+
+body.play .GridWindow { background-color: #4a4a4f; color: #f4f4f4; padding: 8px 16px 8px 16px; }
+
+body.play .BufferWindow { padding: 6px 10px 6px 20px; }
+
+
+/* Mobile Styles */
+
+@media screen and (max-device-width: 480px)
+{
+	div.about { top: 0px; padding: 18px 24px; }
+	div.start { left: 0px; padding: 36px; }
+	
+	div.content { left: 0px; width: auto; }
+	
+	body.play .BufferWindow { padding: 6px 10px 6px 10px; }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Winter Break at Hogwarts Hints</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="author" content="Brian Davies"/>
+<meta name="description" content="Hints for Winter Break at Hogwarts by Brian Davies"/>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+a { color: black; }
+
+p.hidden { background-color: #bbbbbb; color: #bbbbbb; }
+
+p.hidden {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+p { background-color: none; color: black; border-radius: 3px; }
+
+p { transition: background-color 300ms ease-out, color 300ms ease-out; }
+</style>
+
+<script>
+function showanswer (questionindex)
+{
+	var clueindex = 1;
+	var showedclue = false;
+	
+	while (! showedclue)
+	{
+		if (! document.getElementById ("answer" + questionindex + "_" + clueindex))
+		{
+			showedclue = true;
+		}
+		else if (document.getElementById ("answer" + questionindex + "_" + clueindex).className == "hidden")
+		{
+			document.getElementById ("answer" + questionindex + "_" + clueindex).className = null;
+			showedclue = true;
+		}
+		
+		clueindex ++;
+	}
+}
+</script>
+
+ </head>
+
+<body class="hints">
+
+<div class="menu">
+</div>
+
+<div class="content">
+
+<h1>Hints</h1>
+
+<p>Below are hints for all the puzzles in the game.  Click a topic to see the next hint...</p>
+
+<p>A couple of general hints:</p>
+
+<p>Save your game.  Do it before heading into the unknown.  Do it before eating things.  The game is fairly forgiving, but you can get poisoned, you can drown, you can get locked out of places, you can destroy items that are hard to replace, and of course, you can be killed by your nemesis.</p>
+
+<p>You will never die of hunger or cold or sleep deprivation, but they are there to make life feel more realistic.  There is magically regenerating food in the great hall, enough to last several days.  The wool cloak is in the Entrance Hall.  Neither are necessary, but they will reduce the amount of whinging.</p>
+
+<hr/>
+
+
+<h3><a href="javascript:showanswer (1);">Your Wand</a></h3>
+
+<p class="hidden" id="answer1_1">The last time you had it was at the Training Grounds.</p>
+<p class="hidden" id="answer1_2">There's a hint in the snow.</p>
+<p class="hidden" id="answer1_3">Go to the Owlry.  Examine the nest.  Examine the twig.</p>
+<p class="hidden" id="answer1_4">Hagrid might be able to help with owls?</p>
+<p class="hidden" id="answer1_5">You'll need to open the portcullis to get to Hagrid's Hut.</p>
+<p class="hidden" id="answer1_6">Turn the wheel atop the gatehouse to get to the castle grounds.</p>
+<p class="hidden" id="answer1_7">Hagrid is carrying something useful.</p>
+<p class="hidden" id="answer1_8">Ask Hagrid for chow.  <i>(1 point)</i></p>
+<p class="hidden" id="answer1_9">Give chow to owl.  Take wand.  <i>(2 points)</i></p>
+
+<h3><a href="javascript:showanswer (2);">Your Goal</a></h3>
+
+<p class="hidden" id="answer2_1">The owl will bring you a newspaper.  Read it.</p>
+<p class="hidden" id="answer2_2">You need to find Abby Fletcher.</p>
+<p class="hidden" id="answer2_3">Professor Balor's left his notes in the cabinet in Dark Arts Classroom.</p>
+<p class="hidden" id="answer2_4">You can see Professor Dumbledore's office by looking through the telescope from the Observatory.</p>
+<p class="hidden" id="answer2_5">Moaning Myrtle has a lot to say on the subject.</p>
+<p class="hidden" id="answer2_6">You know as much as you can until you find the Marauder's Map.</p>
+<p class="hidden" id="answer2_7">Now that you know where else to look, you can try the telescope again.</p>
+<p class="hidden" id="answer2_8">Professor Balor has Abby trapped in the sealed room on the 3rd floor, but they are not visible.</p>
+<p class="hidden" id="answer2_9">You'll need to solve every other puzzle in the game before you can attempt a rescue.</p>
+
+<h3><a href="javascript:showanswer (3);">Parchment</a></h3>
+
+<p class="hidden" id="answer3_1">There's something important in Filch's desk.</p>
+<p class="hidden" id="answer3_2">You need something to distract Mrs Norris.</p>
+<p class="hidden" id="answer3_3">Hagrid or Professor Sprout might have some advice?</p>
+<p class="hidden" id="answer3_4">Go to the greenhouse.  Examine planter.  Get catnip.  <i>(1 point)</i></p>
+<p class="hidden" id="answer3_5">Give catnip to Norris.  Open parchment.  <i>(1 point)</i></p>
+
+<h3><a href="javascript:showanswer (4);">Hogsmeade</a></h3>
+
+<p class="hidden" id="answer4_1">You can't get to Hogsmeade until you've found the Marauder's Map.</p>
+<p class="hidden" id="answer4_2">The statue is in the First Floor Corridor (west).</p>
+<p class="hidden" id="answer4_3">Tap statue.  Again.  Again.  <i>(1 point)</i></p>
+<p class="hidden" id="answer4_4">There are 3 things you will need to collect in town.</p>
+<p class="hidden" id="answer4_5">You'll need the floo powder, chocolate, and invoice.</p>
+
+<h3><a href="javascript:showanswer (5);">Charm</a></h3>
+
+<p class="hidden" id="answer5_1">Your notebook includes an offensive spell but no defensive spell.</p>
+<p class="hidden" id="answer5_2">Professor Flitwick will teach you a charm.</p>
+<p class="hidden" id="answer5_3">You'll need to persuade him.  He clearly needs something.</p>
+<p class="hidden" id="answer5_4">There's only one room in the castle decorated with candles.</p>
+<p class="hidden" id="answer5_5">Stand on table in great hall.  Get candle.  <i>(1 point)</i></p>
+<p class="hidden" id="answer5_6">Give candle to Flitwick.  <i>(1 point)</i></p>
+
+<h3><a href="javascript:showanswer (6);">Keys</a></h3>
+
+<p class="hidden" id="answer6_1">After getting your wand, there's still one door you can't open.</p>
+<p class="hidden" id="answer6_2">If you use the telescope from the Observatory after getting the Marauder's Map, you can see a key.</p>
+<p class="hidden" id="answer6_3">Someone else will have to get it for you.</p>
+<p class="hidden" id="answer6_4">You need to find a way into Professor Dumbledore's Office.</p>
+<p class="hidden" id="answer6_5">Examine the stairs.</p>
+<p class="hidden" id="answer6_6">Climb red stair.  <i>(1 point)</i></p>
+<p class="hidden" id="answer6_7">The gargoyle will let you in if you say the password.</p>
+<p class="hidden" id="answer6_8">The password is written down somewhere in Hogsmeade.</p>
+<p class="hidden" id="answer6_9">Say the name of the candy on the invoice at Honeydukes.  <i>(1 points)</i></p>
+<p class="hidden" id="answer6_10">Your owl will ask Fawkes to get you the skeleton key.  <i>(1 points)</i></p>
+
+<h3><a href="javascript:showanswer (7);">Bourne</a></h3>
+
+<p class="hidden" id="answer7_1">Professor Snape or Moaning Myrtle might have some advice?</p>
+<p class="hidden" id="answer7_2">You could also look Bourne up in the library?</p>
+<p class="hidden" id="answer7_3">Bourne's book of potions is in the Library Restricted Stacks.</p>
+<p class="hidden" id="answer7_4">You'll need magic to sneak by Madam Pince.</p>
+<p class="hidden" id="answer7_5">The magic you need is in Professor McGonagall's office.</p>
+<p class="hidden" id="answer7_6">Examine rack.  Again.  Again.  <i>(1 point)</i></p>
+<p class="hidden" id="answer7_7">You'll need a distraction.  What is the most distracting thing in the game?</p>
+<p class="hidden" id="answer7_8">Peeves.</p>
+<p class="hidden" id="answer7_9">Wait outside McGonagall's office for Peeves.  Enter McGonagall's office while he's following you.  Get the cloak. <i>(2 points)</i></p>
+<p class="hidden" id="answer7_10">Go to the Library Stacks when Pince is in the Library Hall.  Wear cloak.  Examine tome.  <i>(3 points)</i></p>
+
+<h3><a href="javascript:showanswer (8);">Amanita</a></h3>
+
+<p class="hidden" id="answer8_1">Professor Snape or Professor Sprout might have some advice?</p>
+<p class="hidden" id="answer8_2">Mushrooms grow in dark places.</p>
+<p class="hidden" id="answer8_3">There is an unlit dungeon, northwest of the Old Dungeon.</p>
+<p class="hidden" id="answer8_4">Go to the Unlit Dungeon.  Lumos.  Get mushroom.  <i>(2 points)</i></p>
+
+<h3><a href="javascript:showanswer (9);">Knotgrass</a></h3>
+
+<p class="hidden" id="answer9_1">Professor Snape or Professor Sprout might have some advice?</p>
+<p class="hidden" id="answer9_2">You have to get past the Whomping Willow.</p>
+<p class="hidden" id="answer9_3">Have you found the broom in the quidditch shed?</p>
+<p class="hidden" id="answer9_4">If you talk to Madam Hooch, she will tell you to find something less powerful.</p>
+<p class="hidden" id="answer9_5">The answer is in the First Floor Corridor (south).</p>
+<p class="hidden" id="answer9_6">Try the a mop in the caretaker's storage closet.</p>
+<p class="hidden" id="answer9_7">You'll need to find somewhere very high up to start your glide.</p>
+<p class="hidden" id="answer9_8">Go to the Astronomy Tower Balcony.  Sit on mop.  Go east.  Get up.  Go northeast.  Get knotgrass. <i>(2 points)</i></p>
+
+<h3><a href="javascript:showanswer (10);">Spider Fang</a></h3>
+
+<p class="hidden" id="answer10_1">Professor Snape or Hagrid might have some advice?</p>
+<p class="hidden" id="answer10_2">You will need the antivenom from the chest in the Hospital Office.</p>
+<p class="hidden" id="answer10_3">If you wander around in the Forbidden Forest, you will get stung sooner or later.</p>
+<p class="hidden" id="answer10_4">Wait until you are stung.  Drink the antivenom.  You will already have the fang.  <i>(2 points)</i></p>
+
+<h3><a href="javascript:showanswer (11);">Starthistle</a></h3>
+
+<p class="hidden" id="answer11_1">Professor Snape or Professor Sprout might have some advice?</p>
+<p class="hidden" id="answer11_2">You need something from Hogsmeade.</p>
+<p class="hidden" id="answer11_3">Specifically, you need the floo powder from Dervish & Banges.</p>
+<p class="hidden" id="answer11_4">Incendio a fireplace.  (There's one in the Charms Classroom, if you lost your note.)  Put floo powder in fireplace.  <i>(1 point)</i></p>
+<p class="hidden" id="answer11_5">Enter fireplace.  Open cabinet.  Get starthistle. <i>(2 points)</i></p>
+
+<h3><a href="javascript:showanswer (12);">Squid Ink</a></h3>
+
+<p class="hidden" id="answer12_1">Professor Snape or Hagrid might have some advice?</p>
+<p class="hidden" id="answer12_2">Professor Sprout has a pot of gillyweed.</p>
+<p class="hidden" id="answer12_3">She'll give you some if you do her a favor.</p>
+<p class="hidden" id="answer12_4">Ask her about the flitterbloom.</p>
+<p class="hidden" id="answer12_5">Take the watering can to the Fountain Courtyard.  Fill can with rainwater.  Pour rainwater in brass pot.  <i>(1 point)</i></p>
+<p class="hidden" id="answer12_6">You can't get further until you've been to Hogsmeade.</p>
+<p class="hidden" id="answer12_7">There is a rowboat at the dock around the lake at the train station.</p>
+<p class="hidden" id="answer12_8">Enter boat.  West.  Eat gillyweed.  Exit boat.  Down.  Wait.  Fill flask with ink. <i>(2 points)</i></p>
+
+<h3><a href="javascript:showanswer (13);">Draught</a></h3>
+
+<p class="hidden" id="answer13_1">Obviously, you need the amanita, knotgrass, spider fang, starthistle, and squid ink.</p>
+<p class="hidden" id="answer13_2">Your cauldron is pewter.  Your cauldron is a distractor.  You can drop it now.</p>
+<p class="hidden" id="answer13_3">The answer is in the Trophy Hall.</p>
+<p class="hidden" id="answer13_4">Examine cabinet.  Examine bowl.</p>
+<p class="hidden" id="answer13_5">There is a brazier in the Potions Classroom.</p>
+<p class="hidden" id="answer13_6">Put all the ingredients in the gold bowl.  Put bowl on brazier.  Incendio brazier.  <i>(3 points)</i></p>
+
+
+<h3><a href="javascript:showanswer (14);">Rescue</a></h3>
+
+<p class="hidden" id="answer14_1">You will need two forms of defense before you can pull off a rescue.</p>
+<p class="hidden" id="answer14_2">You need to have the chocolate, and know the the Protego charm.</p>
+<p class="hidden" id="answer14_3">You can't get into the sealed room without the skeleton key.</p>
+<p class="hidden" id="answer14_4">You won't find anything there without the draught.</p>
+<p class="hidden" id="answer14_5">Enter the sealed room while phased.  <i>(4 points)</i></p>
+<p class="hidden" id="answer14_6">Use Protego to defend against the first attack.  <i>(1 point)</i></p>
+<p class="hidden" id="answer14_7">Give chocolate to Abby.  <i>(2 points)</i></p>
+<p class="hidden" id="answer14_8">Give the rest of the draught to Abby.  <i>(1 point)</i></p>
+
+<br/>
+
+</div>
+
+</body>
+</html>
